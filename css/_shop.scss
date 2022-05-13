@@ -1,0 +1,26 @@
+.shopBanner {
+  height: 50vh;
+  background: url(../img/shopbanner.jpg);
+  background-position: 50% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+}
+.shop {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+  padding: 0 5%;
+}
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.ware {
+  padding: 20px;
+}

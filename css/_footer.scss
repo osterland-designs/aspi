@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1% 5%;
+  padding-top: 5%;
+  background: rgb(49, 50, 128);
+  font-size: 1.5rem;
+  color: rgb(161, 161, 161);
+  a {
+    text-decoration: none;
+    color: rgb(236, 233, 233);
+    transition: 0.8s ease;
+  }
+  a:hover {
+    color: rgb(104, 168, 222);
+  }
+  h4 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 5px;
+  }
+}
+.copyright {
+  align-self: flex-end;
+}

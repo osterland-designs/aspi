@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logoimg" src="img/aspi_logo.png" alt="" />
+        </div>
+        <ul class="navlinks">
+          <li><a href="index.html" class="linkactive">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bannerVid">
+        <div class="videoHeadContainer">
+          <video
+            class="videohead"
+            autoplay=""
+            loop=""
+            muted=""
+            playsinline=""
+            poster=""
+          >
+            <source src="vid/aspi_yt_ohne.mp4" type="video/mp4" />
+          </video>
+
+          <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+              let header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+            });
+          </script>
+          <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+              let logo = document.querySelector(".logo");
+              logo.classList.toggle("small", window.scrollY > 0);
+            });
+          </script>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="landBannerText">
+          <h1>Aspilos ihr Speziallist für Hygiene</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+            excepturi expedita accusantium voluptatum suscipit nulla molestias
+            maiores vero tempora. Laborum excepturi quibusdam debitis beatae
+            doloribus veritatis optio voluptas maxime labore? Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Rerum tempore a sequi
+            placeat eos, laborum magni voluptas obcaecati officiis maiores
+            consequatur, consequuntur rem est deleniti atque odit totam possimus
+            eum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            expedita facere tenetur officia neque optio, delectus quam
+            consequatur fugit dolorum ipsam distinctio eius aperiam voluptate
+            autem natus nostrum corporis beatae.
+          </p>
+        </div>
+        <div class="landBannerText">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            rerum deserunt sint error. Eos nihil quisquam nulla esse soluta
+            ipsum veritatis, dolorem labore sint rem modi at porro. Corrupti,
+            explicabo.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            facere suscipit quisquam, ullam similique a deserunt inventore autem
+            temporibus cumque accusantium, id placeat ut doloremque fuga maiores
+            reiciendis rem rerum?
+          </p>
+        </div>
+      </section>
+      <section class="produktSection">
+        <h2>Unsere Produkte</h2>
+        <p>blabablalbalblabalblalbalblablalblalbalblabla</p>
+        <div class="produkte">
+          <div class="produkt stand" onclick="window.location='shop.html'">
+            <div class="produktImg">
+              <img src="img/stand.png" alt="" />
+            </div>
+            <div class="produktText">
+              <h3>Desinfektionsspender AT-600</h3>
+              <p>Stangerät mit Sensor</p>
+            </div>
+          </div>
+          <div class="produkt" onclick="window.location='shop.html'">
+            <div class="produktImg">
+              <img src="img/at600_deshaende.png" alt="" />
+            </div>
+            <div class="produktText">
+              <h3>Handdesinfektionsmittel</h3>
+              <p>mit pflegender Komponente für die Haut</p>
+            </div>
+          </div>
+          <div class="produkt" onclick="window.location='shop.html'">
+            <div class="produktImg">
+              <img src="img/at600_desflaech.png" alt="" />
+            </div>
+            <div class="produktText">
+              <h3>Flächendesinfektionsmittel</h3>
+              <p>Optimal geeignet für Oberflächen jeglicher Art</p>
+            </div>
+          </div>
+          <div class="produkt" onclick="window.location='shop.html'">
+            <div class="produktImg">
+              <img src="img/at600_desflaech.png" alt="" />
+            </div>
+            <div class="produktText">
+              <h3>Flächendesinfektionsmittel</h3>
+              <p>Optimal geeignet für Oberflächen jeglicher Art</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="indiVersion">
+        <h2>Individualisierte Versionen</h2>
+        <p>Behälterfarbe ab 200 Stück wählbar</p>
+        <img src="img/at600_div1.jpg" alt="" />
+      </section>
+    </main>
+    <footer>
+      <div class="contact">
+        <h4>Aspilos GmbH</h4>
+        <p>
+          Opelstr. 8c<br />
+          68789 St. Leon-Rot<br />
+          Telefon: <a href="tel:+496227">06227 789 39 12</a><br />
+
+          <script>
+            bemail("info", "aspilos", "de");
+          </script>
+          <a href="mailto:info@aspilos.de">info@aspilos.de</a
+          ><noscript>info @ aspilos.de</noscript>
+        </p>
+      </div>
+      <div class="rechtliches">
+        <h4>Rechtliches</h4>
+        <a href="">Impressum</a>
+        <a href="">Datenschutz</a>
+        <a href="">AGB</a>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2020 Aspilos. All right reserved</p>
+        <p>Webdesign <a href="">Osterland Designs</a></p>
+      </div>
+    </footer>
+
+    <script src="js/java.js"></script>
+  </body>
+</html>

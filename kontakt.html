@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logoimg" src="img/aspi_logo.png" alt="" />
+        </div>
+        <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="kontakt.html" class="linkactive">Kontakt</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="kontaktBanner">
+        <script type="text/javascript">
+          window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+          });
+        </script>
+        <script type="text/javascript">
+          window.addEventListener("scroll", function () {
+            let logo = document.querySelector(".logo");
+            logo.classList.toggle("small", window.scrollY > 0);
+          });
+        </script>
+      </section>
+    </main>
+  </body>
+</html>

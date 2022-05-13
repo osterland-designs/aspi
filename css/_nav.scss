@@ -1,0 +1,148 @@
+$navcolor: rgb(49, 50, 128);
+$navbackground: rgb(245, 245, 245);
+
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: 1s;
+}
+nav {
+  @include flex();
+  min-height: 6vh;
+  font-family: "Titillium Web", sans-serif;
+  width: 90%;
+  margin: auto;
+  ul {
+    z-index: 200;
+  }
+}
+.linkactive {
+  color: rgb(104, 168, 222);
+  font-weight: bolder;
+}
+
+nav a {
+  text-decoration: none !important;
+  color: $navcolor;
+  letter-spacing: 3px;
+  font-size: 2.1rem;
+  transition: 0.8s ease-in;
+  font-weight: bolder;
+  transition: 0.6s;
+}
+nav a:hover {
+  color: rgb(104, 168, 222);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+li {
+  list-style: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  color: $navcolor;
+  font-weight: bold;
+  left: 0px;
+  transition: 0.6s;
+  img {
+    height: 8vh;
+    padding: 10px 0;
+    transition: 0.6s;
+  }
+}
+.small {
+  height: 3vh;
+  overflow: hidden;
+  img {
+    position: relative;
+    padding: 0;
+    left: -15%;
+  }
+}
+.sticky {
+  background: $navbackground;
+  box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.952);
+}
+.navlinks {
+  @include flex();
+  width: 60%;
+  right: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+li:last-child {
+  justify-content: right;
+}
+.burger {
+  display: none;
+  div {
+    width: 25px;
+    height: 3px;
+    background: $navcolor;
+    margin: 5px;
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navlinks {
+    background: $navbackground;
+    position: absolute;
+    right: 0px;
+    height: 99.9vh;
+    top: 0.1vh;
+    @include flex();
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    width: 40%;
+    justify-content: space-around;
+
+    li {
+      opacity: 0;
+    }
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    z-index: 10000;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+  border-left: 10px rgba(128, 128, 128, 0.596) !important;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle {
+  .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
